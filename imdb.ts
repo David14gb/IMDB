@@ -75,4 +75,8 @@ export class Imdb {
         this.peliculas = peliculas
         
     }
+    printAllMovies():void{
+        console.log(this.peliculas);
+        
+    }
 }
