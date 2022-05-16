@@ -6,6 +6,10 @@ import { losPitufos, thor } from "./movieTest";
 
 
 let ar:Movie[] = [thor, losPitufos]
-let dataBase = new Imdb(ar)
+export let dataBase = new Imdb(ar)
 
 dataBase.printAllMovies();
+
+let dataJson = JSON.stringify(dataBase)
+
+console.log(dataJson);
