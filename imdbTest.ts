@@ -13,3 +13,6 @@ dataBase.printAllMovies();
 let dataJson = JSON.stringify(dataBase)
 
 console.log(dataJson);
+
+const fs = require("fs-extra");
+fs.writeFileSync('imdbBBDD.json', dataJson);
