@@ -30,8 +30,49 @@ export class Professional{
         print():void{
             console.log("Name: " + this.name + "\n" + "Age: " + this.age + "\n" + "Genre: " + this.genre + "\n" + "Weight: " + this.weight
             + "\n" + "Height: " + this.height + "\n" + "HairColor: " + this.hairColor + "\n" + "EyeColor" + this.eyeColor + "\n" + "Race: " + this.race
-            + "\n" + "IsRetired: " + this.isRetired + "\n" + "Nationality: " + this.nationality + "\n" + "OscarsNUmber: " + this.oscarsNumber
+            + "\n" + "IsRetired: " + this.isRetired + "\n" + "Nationality: " + this.nationality + "\n" + "OscarsNumber: " + this.oscarsNumber
             + "\n" + "Porfession: " + this.profession);
         }
 
+}
+
+export class Movie {
+    public title:string
+    public releaseYear:number
+    public actors:string[]
+    public nacionality:string
+    public director:string
+    public writer:string
+    public language:string
+    public plataform:string
+    public isMCU:boolean //Marvel
+    public mainCharacterName:string
+    public producer:string
+    public distributor:string
+    public genre:string
+
+    constructor(title:string, releaseYear:number, nacionality:string, genre:string){
+        this.title = title
+        this.releaseYear = releaseYear
+        this.nacionality = nacionality
+        this.genre = genre
+    }
+
+    printAll():void{
+        console.log(this.title + "\n" + this.releaseYear + "\n" + this.actors
+        + "\n" + this.nacionality + "\n" + this.director + "\n" + this.writer
+        + "\n" + this.language + "\n" + this.plataform + "\n" + this.isMCU
+        + "\n" + this.mainCharacterName + "\n" + this.producer
+        + "\n" + this.distributor + "\n" + this.genre);
+        
+    }
+}
+
+export class Imdb {
+    public peliculas:Movie[]
+
+    constructor(peliculas:Movie[]){
+        this.peliculas = peliculas
+        
+    }
 }
