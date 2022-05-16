@@ -91,7 +91,7 @@ export class Movie {
     public setProducer(producer:string){
         this.producer = producer
     }
-    public setDistributor(distributor:string){
+    public setDistributor(distributor:string){ 
         this.distributor = distributor
     }
 
@@ -103,6 +103,8 @@ export class Movie {
         + "\n" + this.distributor + "\n" + this.genre);
         
     }
+    
+
 }
 
 export class Imdb {
