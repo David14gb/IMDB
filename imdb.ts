@@ -67,6 +67,34 @@ export class Movie {
         this.distributor
     }
 
+    public setActors(actors:Professional[]){
+        this.actors = actors
+    }
+    public setDirector(director:Professional){
+        this.director = director
+    }
+    public setWriter(writer:Professional){
+        this.writer = writer
+    }
+    public setLanguage(language:string){
+        this.language = language
+    }
+    public setPlataform(plataform:string){
+        this.plataform = plataform
+    }
+    public setIsMCU(isMCU:boolean){
+        this.isMCU = isMCU
+    }
+    public setMainCharacterName(mainCharacterName:string){
+        this.mainCharacterName = mainCharacterName
+    }
+    public setProducer(producer:string){
+        this.producer = producer
+    }
+    public setDistributor(distributor:string){
+        this.distributor = distributor
+    }
+
     printAll():void{
         console.log(this.title + "\n" + this.releaseYear + "\n" + this.actors
         + "\n" + this.nacionality + "\n" + this.director + "\n" + this.writer

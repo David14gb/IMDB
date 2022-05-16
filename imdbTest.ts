@@ -23,6 +23,8 @@ ursula.print();
 
 let thor = new Movie("Thor", 2011, "Estados Unidos", "Acción/Fantasía");
 thor.printAll();
+thor.setLanguage("Español")
+
 
 let ar:Movie[] = [thor]
 let dataBase = new Imdb(ar)
