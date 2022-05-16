@@ -42,7 +42,7 @@ export class Movie {
     public actors:string[]
     public nacionality:string
     public director:string
-    public writer:string
+    public writer:string 
     public language:string
     public plataform:string
     public isMCU:boolean //Marvel
@@ -56,6 +56,8 @@ export class Movie {
         this.releaseYear = releaseYear
         this.nacionality = nacionality
         this.genre = genre
+        this.distributor;
+
     }
 
     printAll():void{
@@ -66,6 +68,8 @@ export class Movie {
         + "\n" + this.distributor + "\n" + this.genre);
         
     }
+    
+
 }
 
 export class Imdb {
