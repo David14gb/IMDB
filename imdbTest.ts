@@ -19,8 +19,6 @@ let ursula = new Professional("Penelope", 32, "Cine", 65, 163, "Negro", "Marrone
 ursula.print();
 
 
-
-
 let thor = new Movie("Thor", 2011, "Estados Unidos", "Acción/Fantasía");
 thor.printAll();
 
