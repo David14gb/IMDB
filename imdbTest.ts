@@ -14,5 +14,11 @@ let dataJson = JSON.stringify(dataBase)
 
 console.log(dataJson);
 
-const fs = require("fs")
-fs.writeFileSync(imdbBBDD.json, dataJson)
+const fs = require("fs-extra");
+fs.writeFileSync('imdbBBDD.json', dataJson);
+
+let data = fs.readFileSync('imdbBBDD.json');
+let dataObje = JSON.parse(data);
+console.log(dataObje);
+
+let instan = new Imdb(dataObje);

@@ -1,0 +1,25 @@
+{
+  "name": "imdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David14gb/IMDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David14gb/IMDB/issues"
+  },
+  "homepage": "https://github.com/David14gb/IMDB#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.33"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}

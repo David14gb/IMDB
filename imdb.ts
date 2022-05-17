@@ -10,5 +10,8 @@ export class Imdb {
     printAllMovies():void{
         console.log(this.peliculas);
         
-    }   
+    }
+    escribirEnFicheroJSON(nombreFichero: string){
+        
+    }
 }
