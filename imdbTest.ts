@@ -22,3 +22,7 @@ let dataObje = JSON.parse(data);
 console.log(dataObje);
 
 let instan = new Imdb(dataObje);
+
+let ar2:Movie[]= [losPitufos]
+let videoClubLidia = new Imdb(ar2)
+videoClubLidia.escribirEnFicheroJSON('datos.tx')

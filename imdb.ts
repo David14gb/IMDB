@@ -11,7 +11,8 @@ export class Imdb {
         console.log(this.peliculas);
         
     }
-    escribirEnFicheroJSON(nombreFichero: string){
-        
+    escribirEnFicheroJSON(nombreFichero: string):void{
+        const fs = require("fs-extra");
+       console.log(fs.writeFileSync('videoclub.json', nombreFichero));
     }   
 }
