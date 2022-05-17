@@ -1,5 +1,5 @@
 import { Movie } from "./movie"
-
+const fs = require("fs-extra");
 export class Imdb {
     public peliculas:Movie[]
 
@@ -12,7 +12,12 @@ export class Imdb {
         
     }
     escribirEnFicheroJSON(nombreFichero: string):void{
-        const fs = require("fs-extra");
-       console.log(fs.writeFileSync('videoclub.json', nombreFichero));
+        let pelisLidia:string = JSON.stringify(this.peliculas)
+        fs.writeFileSync(nombreFichero, pelisLidia);
+    }
+    obtenerInstanciaIMDB(nombreFichero:string):Imdb{
+        let data = fs.readFileSync(nombreFichero)
+        let dataObje = JSON.parse(data);
+        return dataObje
     }   
 }

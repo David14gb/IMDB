@@ -5,8 +5,8 @@ import { losPitufos, thor } from "./movieTest";
 
 
 
-let ar:Movie[] = [thor, losPitufos]
-export let dataBase = new Imdb(ar)
+export let ar:Movie[] = [thor, losPitufos]
+let dataBase = new Imdb(ar)
 
 dataBase.printAllMovies();
 
@@ -23,6 +23,9 @@ console.log(dataObje);
 
 let instan = new Imdb(dataObje);
 
-let ar2:Movie[]= [losPitufos]
+let ar2:Movie[]= [losPitufos, thor]
 let videoClubLidia = new Imdb(ar2)
-videoClubLidia.escribirEnFicheroJSON('datos.tx')
+videoClubLidia.escribirEnFicheroJSON('videoclubLidia.json')
+
+console.log(videoClubLidia.obtenerInstanciaIMDB('videoclubLidia.json'));
+
